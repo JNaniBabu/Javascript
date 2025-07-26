@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+             padding: 0px;
+             margin: 0px;
+             box-sizing: border-box;
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(142, 248, 248);
+            
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .tools >button{
+            width: 60px;
+            height: 40px;
+            font-weight: bolder;
+            border-radius: 5px;
+            outline: none;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+       .child > button {
+            width: 80px;
+            height: 50px;
+            border-radius: 10px;
+            outline: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+        <h1>TIMER</h1>
+             <p>00 :00</p>
+
+             <div class="tools">
+                <button onclick="hanldefirst()">10</button>
+                <button  onclick="hanldetwo()">20</button>
+                <button  onclick="hanldethree()">30</button>
+             </div>
+            <button onclick="restart()">Restart</button>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
